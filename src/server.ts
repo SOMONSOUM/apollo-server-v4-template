@@ -123,15 +123,4 @@ export const startServer = async ({
 
 if (NODE_ENV !== 'test') {
   startServer({port: PORT});
-
-  // Note: below is sample of cron job.
-  // const rule = new schedule.RecurrenceRule();
-
-  // rule.tz = 'Asia/Seoul';
-  // rule.dayOfWeek = [0, new schedule.Range(0, 6)];
-  // rule.hour = 4;
-  // rule.minute = 0;
-
-  // schedule.scheduleJob(rule, () => {
-  // });
 }

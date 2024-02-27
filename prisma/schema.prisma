@@ -3,7 +3,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
@@ -22,7 +22,6 @@ enum AuthType {
 model User {
   id           String    @id @default(cuid()) @db.VarChar(50)
   email        String?   @unique
-  /// 비밀번호 => 이메일 로그인 유저만 해당
   password     String?
   name         String?
   displayName  String?   @map("display_name")
@@ -31,7 +30,6 @@ model User {
   birthday     DateTime? @map("birth_day") @db.Date
   gender       Gender?
   phone        String?
-  /// 클라이언트 언어 => 국제화된 문자열을 보내기 위해 사용
   locale       String?
   verifiedAt   DateTime? @map("verified_at")
   lastSignedIn DateTime? @map("last_signed_in")
@@ -62,7 +60,6 @@ model Settings {
 model Image {
   id           String    @id @default(cuid()) @db.VarChar(50)
   thumbUrl     String?   @map("thumb_url")
-  /// 퀄리티 좋은 썸네일. 두개 이상의 depth가 있을 때 용이.
   thumbUrlHigh String?   @map("thumb_url_high")
   imageUrl     String?   @map("image_url")
   createdAt    DateTime? @default(now()) @map("created_at")

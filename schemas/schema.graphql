@@ -8,9 +8,6 @@ scalar Upload
 type Query {
   user(id: ID!): User
 
-  """
-  User 페이지네이션 쿼리
-  """
   users(
     """
     Returns the elements in the list that come after the specified cursor
@@ -22,9 +19,6 @@ type Query {
     """
     first: Int!
 
-    """
-    검색 텍스트
-    """
     searchText: String
   ): UserConnection
 
@@ -41,22 +35,13 @@ type Mutation {
   signInWithFacebook(accessToken: String!): AuthPayload!
   signInWithGoogle(accessToken: String!): AuthPayload!
 
-  """
-  유저 프로필 수정. 프로필 업데이트시 사용자 `displayName`이 중복되면 에러 던짐.
-  """
   updateProfile(
     image: Upload
     user: UserUpdateInput!
 
-    """
-    사진을 지우는지 여부
-    """
     shouldDeleteImage: Boolean = false
   ): User
 
-  """
-  회원 탈퇴하기
-  """
   withdrawUser: Boolean!
 }
 

@@ -3123,6 +3123,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/accepts@npm:*":
+  version: 1.3.7
+  resolution: "@types/accepts@npm:1.3.7"
+  dependencies:
+    "@types/node": "*"
+  checksum: 7678cf74976e16093aff6e6f9755826faf069ac1e30179276158ce46ea246348ff22ca6bdd46cef08428881337d9ceefbf00bab08a7731646eb9fc9449d6a1e7
+  languageName: node
+  linkType: hard
+
 "@types/babel__core@npm:^7.1.14":
   version: 7.20.2
   resolution: "@types/babel__core@npm:7.20.2"
@@ -3164,6 +3173,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/bcrypt@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "@types/bcrypt@npm:5.0.2"
+  dependencies:
+    "@types/node": "*"
+  checksum: b1f97532ffe6079cb57a464f28b5b37a30bc9620f43469e1f27ab9c979c8a114be5b667e7b115a5556fd5be463b65968da9bb32573c6faf74fecf6e565d8974b
+  languageName: node
+  linkType: hard
+
 "@types/body-parser@npm:*":
   version: 1.19.3
   resolution: "@types/body-parser@npm:1.19.3"
@@ -3189,6 +3207,25 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: 4dee3d966fb527b98f0cbbdcf6977c9193fc3204ed539b7522fe5e64dfa45f9017bdda4ffb1f760062262fce7701a0ee1c2f6ce2e50af36c74d4e37052303172
+  languageName: node
+  linkType: hard
+
+"@types/content-disposition@npm:*":
+  version: 0.5.8
+  resolution: "@types/content-disposition@npm:0.5.8"
+  checksum: eeea868fb510ae7a32aa2d7de680fba79d59001f3e758a334621e10bc0a6496d3a42bb79243a5e53b9c63cb524522853ccc144fe1ab160c4247d37cdb81146c4
+  languageName: node
+  linkType: hard
+
+"@types/cookies@npm:*":
+  version: 0.9.0
+  resolution: "@types/cookies@npm:0.9.0"
+  dependencies:
+    "@types/connect": "*"
+    "@types/express": "*"
+    "@types/keygrip": "*"
+    "@types/node": "*"
+  checksum: ce59bfdf3a5d750400ac32aa93157ec7be997dc632660cf0bbfd76df23d71a70bb5f0820558cd26b9a5576f86b6664a2fd23ae211b51202a5b2f9a15995d7331
   languageName: node
   linkType: hard
 
@@ -3280,6 +3317,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/graphql-upload@npm:^16.0.7":
+  version: 16.0.7
+  resolution: "@types/graphql-upload@npm:16.0.7"
+  dependencies:
+    "@types/express": "*"
+    "@types/koa": "*"
+    "@types/node": "*"
+    fs-capacitor: ^8.0.0
+    graphql: ^16.3.0
+  checksum: 06521957111e25217e925bfeee66e3d8d861797a4ca940f3fc475233319d372d3046bfc66c3d00811d567ead4abb28a3d051d1cb9f7f4f342552288c8deba3c0
+  languageName: node
+  linkType: hard
+
+"@types/http-assert@npm:*":
+  version: 1.5.5
+  resolution: "@types/http-assert@npm:1.5.5"
+  checksum: cd6bb7fd42cc6e2a702cb55370b8b25231954ad74c04bcd185b943a74ded3d4c28099c30f77b26951df2426441baff41718816c60b5af80efe2b8888d900bf93
+  languageName: node
+  linkType: hard
+
 "@types/http-errors@npm:*":
   version: 2.0.2
   resolution: "@types/http-errors@npm:2.0.2"
@@ -3346,6 +3403,38 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: 2debf3adb19b827a023205234ec439b7258aee6ca9273472abe360738a84f08db78c6e853172e842ec303169ec0bb2df39701ab9a13b9e7868fe284ef9136567
+  languageName: node
+  linkType: hard
+
+"@types/keygrip@npm:*":
+  version: 1.0.6
+  resolution: "@types/keygrip@npm:1.0.6"
+  checksum: d157f60bf920492347791d2b26d530d5069ce05796549fbacd4c24d66ffbebbcb0ab67b21e7a1b80a593b9fd4b67dc4843dec04c12bbc2e0fddfb8577a826c41
+  languageName: node
+  linkType: hard
+
+"@types/koa-compose@npm:*":
+  version: 3.2.8
+  resolution: "@types/koa-compose@npm:3.2.8"
+  dependencies:
+    "@types/koa": "*"
+  checksum: 95c32bdee738ac7c10439bbf6342ca3b9f0aafd7e8118739eac7fb0fa703a23cfe4c88f63e13a69a16fbde702e0bcdc62b272aa734325fc8efa7e5625479752e
+  languageName: node
+  linkType: hard
+
+"@types/koa@npm:*":
+  version: 2.15.0
+  resolution: "@types/koa@npm:2.15.0"
+  dependencies:
+    "@types/accepts": "*"
+    "@types/content-disposition": "*"
+    "@types/cookies": "*"
+    "@types/http-assert": "*"
+    "@types/http-errors": "*"
+    "@types/keygrip": "*"
+    "@types/koa-compose": "*"
+    "@types/node": "*"
+  checksum: f429b92f36f96c8f5ceb5333f982400d0db20e177b7d89a7a576ac6f63aff8c964f7ab313e2e281a07bbb93931c66327fb42614cd4984b2ef33dfe7cbd76d741
   languageName: node
   linkType: hard
 
@@ -4101,10 +4190,12 @@ __metadata:
     "@prisma/client": ^5.3.1
     "@sendgrid/mail": ^7.7.0
     "@sentry/node": ^7.71.0
+    "@types/bcrypt": ^5.0.2
     "@types/cors": ^2.8.14
     "@types/ejs": ^3.1.3
     "@types/express": ^4.17.18
     "@types/graphql-iso-date": ^3.4.0
+    "@types/graphql-upload": ^16.0.7
     "@types/jsonwebtoken": 9.0.3
     "@types/multer": ^1.4.7
     "@types/node": ^20.7.0
@@ -4139,13 +4230,13 @@ __metadata:
     jwks-client: ^2.0.2
     multer: ^1.4.4
     nanoid: ^5.0.1
-    nodemon: ^3.0.1
+    nodemon: ^3.1.0
     prettier: ^3.0.3
     prisma: ^5.3.1
     react: ^18.2.0
     sharp: ^0.32.6
     ts-jest: ^29.1.1
-    ts-node: 10.9.1
+    ts-node: ^10.9.2
     ts-node-dev: 2.0.0
     tslib: ^2.6.2
     typescript: 5.2.2
@@ -5494,7 +5585,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:4.3.4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.3, debug@npm:^4.3.4":
+"debug@npm:4, debug@npm:4.3.4, debug@npm:^4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.3, debug@npm:^4.3.4":
   version: 4.3.4
   resolution: "debug@npm:4.3.4"
   dependencies:
@@ -7284,7 +7375,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:^16.8.1":
+"graphql@npm:^16.3.0, graphql@npm:^16.8.1":
   version: 16.8.1
   resolution: "graphql@npm:16.8.1"
   checksum: 8d304b7b6f708c8c5cc164b06e92467dfe36aff6d4f2cf31dd19c4c2905a0e7b89edac4b7e225871131fd24e21460836b369de0c06532644d15b461d55b1ccc0
@@ -9858,12 +9949,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemon@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "nodemon@npm:3.0.1"
+"nodemon@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "nodemon@npm:3.1.0"
   dependencies:
     chokidar: ^3.5.2
-    debug: ^3.2.7
+    debug: ^4
     ignore-by-default: ^1.0.1
     minimatch: ^3.1.2
     pstree.remy: ^1.1.8
@@ -9874,7 +9965,7 @@ __metadata:
     undefsafe: ^2.0.5
   bin:
     nodemon: bin/nodemon.js
-  checksum: 6a5d81855760d6617049eccce10ccf02bddb482dab13ceea5280ae595ec7004eee13e7b934368e3f46c37fe4d970342a8c38c99cae7e93e4d7a3ed1c1ecb6acf
+  checksum: 0b721f66ee60d9bf092f6101965bc65769698fa2921d0283d90bbf3f0906aa4f3ac77316682375bd7f09c91679fddb131aa39f9fc839fea57061bbc8e81b60e3
   languageName: node
   linkType: hard
 
@@ -12166,7 +12257,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:10.9.1, ts-node@npm:^10.4.0":
+"ts-node@npm:^10.4.0":
   version: 10.9.1
   resolution: "ts-node@npm:10.9.1"
   dependencies:
@@ -12201,6 +12292,44 @@ __metadata:
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
   checksum: 090adff1302ab20bd3486e6b4799e90f97726ed39e02b39e566f8ab674fd5bd5f727f43615debbfc580d33c6d9d1c6b1b3ce7d8e3cca3e20530a145ffa232c35
+  languageName: node
+  linkType: hard
+
+"ts-node@npm:^10.9.2":
+  version: 10.9.2
+  resolution: "ts-node@npm:10.9.2"
+  dependencies:
+    "@cspotcode/source-map-support": ^0.8.0
+    "@tsconfig/node10": ^1.0.7
+    "@tsconfig/node12": ^1.0.7
+    "@tsconfig/node14": ^1.0.0
+    "@tsconfig/node16": ^1.0.2
+    acorn: ^8.4.1
+    acorn-walk: ^8.1.1
+    arg: ^4.1.0
+    create-require: ^1.1.0
+    diff: ^4.0.1
+    make-error: ^1.1.1
+    v8-compile-cache-lib: ^3.0.1
+    yn: 3.1.1
+  peerDependencies:
+    "@swc/core": ">=1.2.50"
+    "@swc/wasm": ">=1.2.50"
+    "@types/node": "*"
+    typescript: ">=2.7"
+  peerDependenciesMeta:
+    "@swc/core":
+      optional: true
+    "@swc/wasm":
+      optional: true
+  bin:
+    ts-node: dist/bin.js
+    ts-node-cwd: dist/bin-cwd.js
+    ts-node-esm: dist/bin-esm.js
+    ts-node-script: dist/bin-script.js
+    ts-node-transpile-only: dist/bin-transpile.js
+    ts-script: dist/bin-script-deprecated.js
+  checksum: fde256c9073969e234526e2cfead42591b9a2aec5222bac154b0de2fa9e4ceb30efcd717ee8bc785a56f3a119bdd5aa27b333d9dbec94ed254bd26f8944c67ac
   languageName: node
   linkType: hard
 

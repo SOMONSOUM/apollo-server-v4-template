@@ -36,10 +36,6 @@ type Image {
   imageUrl: String
   thumbUrl: String
   createdAt: DateTime
-
-  """
-  퀄리티 좋은 썸네일. 두개 이상의 depth가 있을 때 용이.
-  """
   thumbUrlHigh: String
 }
 

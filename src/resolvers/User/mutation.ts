@@ -292,7 +292,6 @@ const updateProfile: MutationResolvers['updateProfile'] = async (
           id: {not: userId},
           displayName: {
             equals: displayName,
-            mode: 'insensitive',
           },
         },
         select: {id: true},

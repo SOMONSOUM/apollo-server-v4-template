@@ -14,14 +14,13 @@ const users: QueryResolvers['users'] = async (_, args, {prisma}, info) => {
   const searchArgs: Prisma.UserWhereInput = lowerSearchText
     ? {
         OR: [
-          {name: {contains: lowerSearchText, mode: 'insensitive'}},
+          {name: {contains: lowerSearchText}},
           {
             displayName: {
               contains: lowerSearchText,
-              mode: 'insensitive',
             },
           },
-          {email: {contains: lowerSearchText, mode: 'insensitive'}},
+          {email: {contains: lowerSearchText}},
         ],
       }
     : {};
